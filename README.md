@@ -26,9 +26,9 @@ UniExec is a Python script designed for executing commands on remote machines us
    ```bash
    git clone https://github.com/<your-username>/uniexec.git
 
-   Change into the project directory:
+    Change into the project directory:
 
-bash
+    bash
 
     cd uniexec
 
