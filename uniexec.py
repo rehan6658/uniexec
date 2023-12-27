@@ -17,7 +17,6 @@ def execute_command(command, connection_method, remote_address, username, passwo
 
 
 def main():
-    # ASCII art banner with the tool name and creator's name
     banner = '''
     _____ _           _     _     _ _   
    |  ___(_)         | |   | |   (_) |  
