@@ -25,3 +25,38 @@ UniExec is a Python script designed for executing commands on remote machines us
 
    ```bash
    git clone https://github.com/<your-username>/uniexec.git
+
+   Change into the project directory:
+
+bash
+
+    cd uniexec
+
+Running the Tool
+
+Run the script from the command line:
+
+bash
+
+python uniexec.py <command> <remote_address> [--method <method>] [--username <username>] [--password <password>] [--domain <domain>]
+
+    <command>: The command to execute.
+    <remote_address>: The address of the remote machine.
+    --method <method>: The method to use for the connection (default: 'execute_command'). Other methods include 'winrm', 'ssh', 'smb', 'ldap', 'ftp', 'wmi', 'rdp', 'vnc', 'mssql'.
+    --username <username>: The username for remote machine connection (optional).
+    --password <password>: The password for remote machine connection (optional).
+    --domain <domain>: The domain for remote machine connection (optional).
+
+Example
+
+bash
+
+python uniexec.py "dir" 192.168.1.100 --method ssh --username user --password pass
+
+This example demonstrates running the tool to execute the "dir" command on a remote machine with the address "192.168.1.100" using the SSH connection method.
+Contributing
+
+If you'd like to contribute to this project, please follow the Contributing Guidelines.
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
